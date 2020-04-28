@@ -16,7 +16,7 @@ def mute():
     global muted
 
     logging.info("muting")
-    subprocess.run(["amixer", "-c", "1", "set", "Mic", "nocap"],
+    subprocess.run(["amixer", "-c", "2", "set", "Mic", "nocap"],
                    stdout=subprocess.DEVNULL)
     muted = True
 
@@ -24,7 +24,7 @@ def unmute():
     global muted
 
     logging.info("unmuting")
-    subprocess.run(["amixer", "-c", "1", "set", "Mic", "cap"],
+    subprocess.run(["amixer", "-c", "2", "set", "Mic", "cap"],
                    stdout=subprocess.DEVNULL)
     muted = False
 
