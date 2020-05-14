@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "580ce7d4ec2847aba71e1c1d698eab20b497534ea3285eae6cd140a9a1f714cc"
+            "sha256": "8b6fe2184302397127aaf2cb8a697d4ceefefabf43b944d6125705401a1de3a1"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -18,16 +18,29 @@
     "default": {
         "adafruit-blinka": {
             "hashes": [
-                "sha256:84aa370e1c9489974af5a1edd92dcc43161e6f8bf30d2fdd00439fcb8c403ed7"
+                "sha256:b00da4722f1dda095f0ffe78ab3207b81cbb35c32096dfef640bfa7efab3dce7"
             ],
             "index": "pypi",
-            "version": "==4.6.0"
+            "version": "==4.8.1"
+        },
+        "adafruit-circuitpython-busdevice": {
+            "hashes": [
+                "sha256:7eafaaad3bbcd6b31102632fc5c289dc1e208ee34301d0e44210e95664552657"
+            ],
+            "version": "==4.3.1"
+        },
+        "adafruit-circuitpython-ht16k33": {
+            "hashes": [
+                "sha256:1d10bb9c4a8be143cbe7e54afbbcc2a50ab66be852e24503039c396435d99b2d"
+            ],
+            "index": "pypi",
+            "version": "==4.1.1"
         },
         "adafruit-platformdetect": {
             "hashes": [
-                "sha256:aff8e74901e9a33c98a677b30075325494a7bb173b519e79b7db5c77d8b1e265"
+                "sha256:aeb96874ca22eb6e6af5438a1fca560691b7aad709e0e925635920d81f3c5eb1"
             ],
-            "version": "==2.7.0"
+            "version": "==2.10.0"
         },
         "adafruit-pureio": {
             "hashes": [
@@ -52,10 +65,10 @@
         },
         "pyftdi": {
             "hashes": [
-                "sha256:487a675a75f03e53821004baf8e798788c9e456f358dd8bbd4437b8526312bec",
-                "sha256:b5fed2348db2b342218d1d6f789c692732ba7570fccafe0b56de0a31a2efb526"
+                "sha256:02926258d5dfd28452a3d4d7c2f6d5bab722133b2885bde8b9e28bd2ccc095ca",
+                "sha256:6cacb8fe28491ee6d00b8d45e18f73ea539b31bcd785f5d8c80a60322297c007"
             ],
-            "version": "==0.50.2"
+            "version": "==0.51.2"
         },
         "pyserial": {
             "hashes": [

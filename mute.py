@@ -5,9 +5,16 @@ import subprocess
 import logging
 import argparse
 
+from adafruit_ht16k33.matrix import Matrix8x8
+
 
 button = digitalio.DigitalInOut(board.G0)
 button.direction = digitalio.Direction.INPUT
+
+i2c = board.I2C()
+matrix = Matrix8x8(i2c)
+matrix.brightness = 0.01
+matrix.fill(1)
 
 muted = False
 
