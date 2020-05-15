@@ -9,6 +9,7 @@ verify_ssl = true
 hidapi = "*"
 adafruit-blinka = "*"
 adafruit-circuitpython-ht16k33 = "*"
+pillow = "*"
 
 [requires]
 python_version = "3.6"
