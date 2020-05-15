@@ -13,12 +13,7 @@ button = digitalio.DigitalInOut(board.G0)
 button.direction = digitalio.Direction.INPUT
 
 i2c = board.I2C()
-matrix = Matrix8x8(i2c)
-matrix.brightness = 0.01
-matrix.fill(1)
-
-image = Image.open("matrix-images/muted.png")
-matrix.image(image)
+matrix = Matrix8x8(i2c, auto_write=False, brightness=0.01)
 
 muted = False
 
@@ -29,6 +24,11 @@ def mute():
     logging.info("muting")
     subprocess.run(["amixer", "-c", "2", "set", "Mic", "nocap"],
                    stdout=subprocess.DEVNULL)
+
+    image = Image.open("matrix-images/muted.png")
+    matrix.image(image)
+    matrix.show()
+
     muted = True
 
 def unmute():
@@ -37,6 +37,10 @@ def unmute():
     logging.info("unmuting")
     subprocess.run(["amixer", "-c", "2", "set", "Mic", "cap"],
                    stdout=subprocess.DEVNULL)
+
+    matrix.fill(0)
+    matrix.show()
+
     muted = False
 
 
